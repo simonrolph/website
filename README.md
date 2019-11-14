@@ -1,2 +1,2 @@
 # website
-It's my webside
+It's my website
