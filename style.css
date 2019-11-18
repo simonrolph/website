@@ -1,0 +1,35 @@
+h1 {
+    
+    font-family: 'Fredoka One', cursive;
+    background-color: rgb(238, 209, 81);
+    padding:10px 60px 10px 60px;
+    margin: 30px -60px 30px -60px;
+    font-size: 75px;
+    box-shadow: 10px 10px 0px rgb(42, 42, 42);
+    color:rgb(0, 0, 0);
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Fira Sans', sans-serif; 
+    font-size: 40px; 
+}
+
+p{
+    font-family: 'Fira Sans', sans-serif;
+    
+}
+
+body{
+    background-color: rgb(122, 184, 224);
+    
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: aliceblue;
+    padding:30px;
+    box-shadow: 10px 10px 0px rgb(42, 42, 42);
+    
+}
