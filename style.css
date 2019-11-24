@@ -1,6 +1,6 @@
 h1 {
     
-    font-family: 'Fredoka One', cursive;
+    /*font-family: 'Fredoka One', cursive;*/
     background-color: rgb(238, 209, 81);
     padding:10px 60px 10px 60px;
     margin: 30px -60px 30px -60px;
@@ -10,26 +10,90 @@ h1 {
     text-align: center;
 }
 
+h2{
+    font-family: 'Fira Sans', sans-serif; 
+    font-size: 30px;
+}
+
 h3 {
     font-family: 'Fira Sans', sans-serif; 
-    font-size: 40px; 
+    font-size: 40px;
+
 }
 
 p{
     font-family: 'Fira Sans', sans-serif;
+    text-align: left;
     
 }
 
 body{
-    background-color: rgb(122, 184, 224);
-    
+    background-color: rgb(20, 20, 20);
 }
 
 .container {
-    max-width: 900px;
-    margin: 0 auto;
-    background-color: aliceblue;
-    padding:30px;
-    box-shadow: 10px 10px 0px rgb(42, 42, 42);
-    
+    max-width: 800px;
+    margin: 0 auto;   
+    padding: 20px;
 }
+
+.colourband {
+    margin-left: -1000px;
+    padding-left: 1000px;
+}
+
+
+/* Container for flexboxes */
+.row {
+    display: -webkit-flex;
+    display: flex;
+  }
+  
+  /* Create three equal columns that sits next to each other */
+  .column {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    padding: 10px;
+  }
+
+  .columnw {
+    -webkit-flex: 2;
+    -ms-flex: 2;
+    flex: 2;
+    padding: 10px;
+  }
+
+  /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media (max-width: 600px) {
+    .row {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      text-align: center;
+    }
+  }
+
+  .responsive {
+    max-width: 100%;
+    height: auto;
+    height: 200px;
+    object-fit: cover;
+    
+  }
+
+
+  
+  .svg-container {
+    display: inline-block;
+    position: relative;
+    width: 100%;
+    padding-bottom: 100%; /* aspect ratio */
+    vertical-align: top;
+    overflow: hidden;
+  }
+  .svg-content-responsive {
+    display: inline-block;
+    position: absolute;
+    top: 10px;
+    left: 0;
+  }
