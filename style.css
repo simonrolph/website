@@ -1,34 +1,46 @@
 h1 {
-    
-    /*font-family: 'Fredoka One', cursive;*/
-    background-color: rgb(238, 209, 81);
-    padding:10px 60px 10px 60px;
-    margin: 30px -60px 30px -60px;
-    font-size: 75px;
-    box-shadow: 10px 10px 0px rgb(42, 42, 42);
-    color:rgb(0, 0, 0);
-    text-align: center;
-}
-
-h2{
-    font-family: 'Fira Sans', sans-serif; 
+    color: aliceblue;
     font-size: 30px;
+    font-family: 'Overpass', sans-serif;
+    font-weight: bolder;
 }
 
-h3 {
-    font-family: 'Fira Sans', sans-serif; 
-    font-size: 40px;
+h3{
+  font-family: 'Overpass', sans-serif;
+  font-weight: bolder;
+  padding-top: 30px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#440154+0,404788+48,1f968b+56,73d055+61,fde725+66,73d055+71,1f968b+76,404788+85,440154+99 */
+  /*background: #440154; /* Old browsers */
+  /*background: -moz-linear-gradient(-45deg,  #440154 0%, #404788 48%, #1f968b 56%, #73d055 61%, #fde725 66%, #73d055 71%, #1f968b 76%, #404788 85%, #440154 99%); /* FF3.6-15 */
+  /*background: -webkit-linear-gradient(-45deg,  #440154 0%,#404788 48%,#1f968b 56%,#73d055 61%,#fde725 66%,#73d055 71%,#1f968b 76%,#404788 85%,#440154 99%); /* Chrome10-25,Safari5.1-6 */
+  /*background: linear-gradient(135deg,  #440154 0%,#404788 48%,#1f968b 56%,#73d055 61%,#fde725 66%,#73d055 71%,#1f968b 76%,#404788 85%,#440154 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  /*filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#440154', endColorstr='#440154',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+  
 
 }
 
-p{
-    font-family: 'Fira Sans', sans-serif;
-    text-align: left;
-    
+.viridis {
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#440154+0,404788+48,1f968b+69,73d055+83,b8de29+100 */
+  background: #440154; /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  #440154 0%, #404788 48%, #1f968b 69%, #73d055 83%, #b8de29 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  #440154 0%,#404788 48%,#1f968b 69%,#73d055 83%,#b8de29 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  #440154 0%,#404788 48%,#1f968b 69%,#73d055 83%,#b8de29 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#440154', endColorstr='#b8de29',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+  padding-left:10px;
+
 }
 
 body{
     background-color: rgb(20, 20, 20);
+    color: aliceblue;
+}
+
+a, a:hover, a:active, a:visited { color: aliceblue; }
+
+p{
+  font-family: 'Overpass', sans-serif;
+  
 }
 
 .container {
@@ -37,9 +49,18 @@ body{
     padding: 20px;
 }
 
+#my_dataviz{
+  
+}
+
 .colourband {
     margin-left: -1000px;
     padding-left: 1000px;
+}
+
+.responsiveimg {
+  width: 100%;
+  height: auto;
 }
 
 
@@ -69,7 +90,6 @@ body{
     .row {
       -webkit-flex-direction: column;
       flex-direction: column;
-      text-align: center;
     }
   }
 
@@ -82,7 +102,8 @@ body{
   }
 
 
-  
+
+
   .svg-container {
     display: inline-block;
     position: relative;
@@ -94,6 +115,6 @@ body{
   .svg-content-responsive {
     display: inline-block;
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
   }

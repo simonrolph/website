@@ -2,7 +2,8 @@
 <html>
 
 <head>
-    <link href="https://fonts.googleapis.com/css?family=Bangers|Fira+Sans|Fredoka+One&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Overpass&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=EB+Garamond&display=swap" rel="stylesheet">
     <link href="style.css" rel="stylesheet" type="text/css">
 
     <title>Simon Rolph</title>
@@ -18,10 +19,103 @@
 
 <body>
 
+
     <main class="container">
         <!-- Create a div where the graph will take place -->
-        <div id="my_dataviz" ></div>
+        <div class="row">
+            <div class="columnw">
+                <div id="my_dataviz"></div>
+                <p style="margin: 0; background-color:rgb(26, 26, 26); padding:10px; color:rgb(146, 146, 146)">This is an integral projection model showing the growth, survival and reproduction over a discrete time interval. I use simulated models like these to determine how we can use real demographic data such as the COMPADRE Plant Matrix Database. </p>
+            </div>
+            <div class="column">
+                <img class="responsiveimg" src="pictures/YUyxkYhi_400x400.png">
+                <h1>Simon Rolph</h1>
+                <p>PhD student at the University of Sheffield. Population biologist. Developing tools to make better use of demographic data in ecological contexts.</p>
+                <p>Coder, fern lover and tram enthusiast 🚋</p>
+                <!--<p>Tw Gi YT RG Li</p>-->
+            </div>
+        </div>
 
+        <div class="row">
+            <div class="column" >
+                <h3>Research</h3>
+            </div>
+        </div>
+
+
+        <div class="row" style="background-color: rgb(26, 26, 26);">
+            <div class="column">
+                
+                <img class="responsiveimg" src="pictures/BESquant18.jpg">
+                <img class="responsiveimg" src="pictures/compadrecomadre.png">
+                <img class="responsiveimg" src="pictures/TuosLogo.png">
+            </div>
+            <div class="columnw">
+                <p>I'm a quantiative ecologist looking at how comparative analyses of population models can provide insight into fundamental and applied questions about the nature of life history trade-offs and short-term responses to environmental change. 
+                </p>
+                <p>
+                My research has used the COMPADRE Plant Matrix Database alongside population modelling tools, integral projection models (IPMs) and matrix population models (MPMs), to produce simulated population models as an investigative framework for identifying best practices for comparative analyses. For my final research unit I have been using the Soay Sheep dataset. An incredible dataset tracking the fates of hundreds of sheep over 2 decades of births and deaths.</p>
+
+
+                <p>I've been lucky enough to have the opportunity to present at a range of conferences including giving a talk at Ecological Soceity of America's Annual Meeting in New Orelans in 2018. I've given talks and presented posters at the British Ecological Soceity's Annual meetings from 2016-2019 and their special interest groups: Macrocology (2019) and Quantative Ecology (2018).</p> <p>I've helped run workshops about the COMPADRE Plant Matrix Database.</p>
+
+            </div>
+        </div>
+
+
+        <div class="row" >
+            <div class="column">
+                    <h3 >Bits and bobs you can check out</h3>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="background-color: rgb(26, 26, 26);">
+            <div class="column">
+                    <img class="responsiveimg" src="pictures/inatcounter.png">
+                    <img class="responsiveimg" src="pictures/compadre.png">
+                
+            </div>
+            <div class="columnw">
+                <p>iNaturalist Live - a constantly updating map and ticker showing activity of the wildlife recording website iNaturalist. Made using JavaScript and makes us of the iNaturalist API.</p>
+                <p>COMPADRE Plant Matrix Database prototype user interface.</p>
+                <p>Describe Wild - a prototype web page designed to be a place to share and consume media about wildlife, ecology and conservation. Exploreable map and searchable by ecological relvant meta-data such as taxonomic groups featured.</p>
+                <p>Drawing an IPM kernel with d3.js</p>
+                <p>Visualsing MPMs as Sankey Diagrams</p>
+                <p>Youtube videos about wild flowers and my undergraduate fieldtrip to Tenerife.</p>
+
+            </div>
+        </div>
+
+        <div class="row" >
+                <div class="column">
+                    <h3 >Other stuff I've done</h3>
+            </div>
+        </div>
+
+
+
+        <div class="row" style="background-color: rgb(26, 26, 26);">
+            <div class="column">
+                
+                <img class="responsiveimg" src="pictures/BESss.jpg">
+                <img class="responsiveimg" src="pictures/zombies.jpg">
+                <img class="responsiveimg" src="pictures/jars.jpg">
+            </div>
+            <div class="columnw">
+                <p>Mentor and teaching asssiant on the <a href="https://www.britishecologicalsociety.org/learning-and-resources/career-development/ugsummer-school/">British Ecological Society undergraduate summer school</a>. Delivered a session on why ecologists use modelling and simulations.</p>
+                <p>Biomathematics outreach at Green Man Festival teaching festival-goers how to avert the zombie apocalypse using mathematics.</p>
+                <p>Data processing and front-end development as part of a 10 week summer internship working with the COMPADRE Plant Matrix Database.</p>
+                <p>Land management team member with the Wildlife Trust for Sheffield and Rotherham and the Wildlife Trust for Beds, Cambs & Northants.</p>
+                <p>Plant rep and minibus driver for FXU EcoSoc. I ran workshops on creating an 'ecosystem in a jar'. </p>
+                <p>Aquarist at Falmouth Aquarium. Maintained native and tropical aquariums, engaged with visitors and supervised volunteers.</p>
+                <p>Ecologist on a research trip to the Perhentian Islands in Malaysia.</p>
+                <p>Bottlenose dolphin research assistant at Cardigan Bay Marine Wildlife Centre.</p>
+                <p>Data entry volunteer for the ecology group at the Wildlife Trust for Beds, Cambs & Northants.</p>
+
+            </div>
+        </div>
 
 
     </main>
@@ -36,10 +130,10 @@
     <script>
         // set the dimensions and margins of the graph
         var margin = {
-                top: 30,
-                right: 30,
-                bottom: 30,
-                left: 30
+                top: 0,
+                right: 0,
+                bottom: 0,
+                left: 0
             },
             width = 800 - margin.left - margin.right,
             height = 800 - margin.top - margin.bottom;
@@ -48,7 +142,7 @@
         var svg = d3.select("#my_dataviz")
             .append("div")
             // Container class to make it responsive.
-            .classed("svg-container", true) 
+            .classed("svg-container", true)
             .append("svg")
             // Responsive SVG needs these 2 attributes and no width and height attr.
             .attr("preserveAspectRatio", "xMinYMin meet")
@@ -60,77 +154,78 @@
             .attr("height", height + margin.top + margin.bottom)
             .append("g")
             .attr("transform",
-                "translate(" + margin.left + "," + margin.top + ")");   
-            
+                "translate(" + margin.left + "," + margin.top + ")");
+
         // generate data
-        survint = Math.random()-3;
+        survint = Math.random() - 3;
         survz = Math.random();
 
-        growint = Math.random()+1;
-        growz = 1-growint/2;
-        growsd = Math.random()/3+0.1;
+        growint = Math.random() + 1;
+        growz = 1 - growint / 2;
+        growsd = Math.random() / 3 + 0.1;
 
-        reprint = Math.random()-3;
+        reprint = Math.random() - 3;
         reprz = Math.random();
 
         noffint = Math.random();
         noffz = Math.random();
 
-        rcszint = 0.75+Math.random()/2;
-        rcszsd = Math.random()/3+0.1;
+        rcszint = 0.75 + Math.random() / 2;
+        rcszsd = Math.random() / 3 + 0.1;
 
-        
-        
+
+
 
         // dnrom
         var pi = 3.1415926;
         var e = 2.71828;
 
-        function dnorm(x,mean,sd){
-            return 1 / Math.sqrt(2 * pi * Math.pow(sd,2)) * Math.pow(e,-(Math.pow(x-mean,2) / (2* Math.pow(sd,2))))
+        function dnorm(x, mean, sd) {
+            return 1 / Math.sqrt(2 * pi * Math.pow(sd, 2)) * Math.pow(e, -(Math.pow(x - mean, 2) / (2 * Math.pow(sd,
+                2))))
         }
 
 
         // survival function
-        function survFunction(z){
+        function survFunction(z) {
             linear = survint + survz * z
-            return 1/(1+Math.pow(e,-linear))   
+            return 1 / (1 + Math.pow(e, -linear))
         };
 
         // growth function
         function growthFunction(z, z1) {
-            mu = growint + growz * z;           // mean size next year
-            sig = growsd;                    // sd about mean
-            pdengrow = dnorm(z1, mean = mu, sd = sig);             // pdf that you are size z1 given you were size z
-            return pdengrow;   // The function returns the product of p1 and p2
+            mu = growint + growz * z; // mean size next year
+            sig = growsd; // sd about mean
+            pdengrow = dnorm(z1, mean = mu, sd = sig); // pdf that you are size z1 given you were size z
+            return pdengrow; // The function returns the product of p1 and p2
         };
 
         // probability of reproduction function
-        function reprFunction(z){
+        function reprFunction(z) {
             linear = reprint + reprz * z
-            return 1/(1+Math.pow(e,-linear))   
+            return 1 / (1 + Math.pow(e, -linear))
         };
 
         // number of offspring function
-        function noffFunction(z){
+        function noffFunction(z) {
             linear = noffint + noffz * z
-            return Math.pow(e,linear)*0.1
+            return Math.pow(e, linear) * 0.1
         };
 
         // size at birth function
-        function rcszFunction(z1){
-            mu = rcszint;           // mean size next year
-            sig = rcszsd;                    // sd about mean
-            pdengrow = dnorm(z1, mean = mu, sd = sig);             // pdf that you are size z1 given you were size z
+        function rcszFunction(z1) {
+            mu = rcszint; // mean size next year
+            sig = rcszsd; // sd about mean
+            pdengrow = dnorm(z1, mean = mu, sd = sig); // pdf that you are size z1 given you were size z
             return pdengrow;
         }
-        
 
-        function Pkern(z,z1){
+
+        function Pkern(z, z1) {
             return survFunction(z) * growthFunction(z, z1)
         }
 
-        function Fkern(z,z1){
+        function Fkern(z, z1) {
             return reprFunction(z) * noffFunction(z) * rcszFunction(z1)
         }
 
@@ -140,18 +235,18 @@
 
         var csvfile = "group,variable,value\n"
 
-        kerndim = 140;
+        kerndim = 100;
         maxsize = 3;
         minsize = 0;
 
-        for (let i = 0; i<(kerndim*kerndim);i++){
-            numbers.push(((i% kerndim)+1)/kerndim*maxsize);
-            numbers2.push((Math.floor((i/kerndim)+1))/kerndim*maxsize);
-            result.push(Pkern(numbers[i],numbers2[i])+Fkern(numbers[i],numbers2[i]));
-            csvfile = csvfile.concat("X",numbers[i],",Y",numbers2[i],",",result[i],"\n");
+        for (let i = 0; i < (kerndim * kerndim); i++) {
+            numbers.push(((i % kerndim) + 1) / kerndim * maxsize);
+            numbers2.push((Math.floor((i / kerndim) + 1)) / kerndim * maxsize);
+            result.push(Pkern(numbers[i], numbers2[i]) + Fkern(numbers[i], numbers2[i]));
+            csvfile = csvfile.concat("X", numbers[i], ",Y", numbers2[i], ",", result[i], "\n");
         }
 
-        
+
 
         var data = d3.csvParse(csvfile);
         console.log(data);
@@ -197,8 +292,8 @@
             })
             .attr("rx", 0)
             .attr("ry", 0)
-            .attr("width", x.bandwidth()+1)
-            .attr("height", y.bandwidth()+1)
+            .attr("width", x.bandwidth() + 1)
+            .attr("height", y.bandwidth() + 1)
             .style("fill", function (d) {
                 return myColor(d.value)
             })
