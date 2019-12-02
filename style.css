@@ -1,14 +1,17 @@
 h1 {
     color: aliceblue;
-    font-size: 30px;
+    font-size: 59px;
     font-family: 'Overpass', sans-serif;
     font-weight: bolder;
+    margin-bottom: 0px;
+    margin-top: 10px;
 }
 
 h3{
   font-family: 'Overpass', sans-serif;
   font-weight: bolder;
-  padding-top: 30px;
+  font-size: 40px;
+  margin-bottom: 0px;
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#440154+0,404788+48,1f968b+56,73d055+61,fde725+66,73d055+71,1f968b+76,404788+85,440154+99 */
   /*background: #440154; /* Old browsers */
   /*background: -moz-linear-gradient(-45deg,  #440154 0%, #404788 48%, #1f968b 56%, #73d055 61%, #fde725 66%, #73d055 71%, #1f968b 76%, #404788 85%, #440154 99%); /* FF3.6-15 */
