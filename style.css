@@ -7,6 +7,8 @@ h1 {
     margin-top: 10px;
 }
 
+
+
 h3{
   font-family: 'Overpass', sans-serif;
   font-weight: bolder;
@@ -34,9 +36,28 @@ h3{
 
 }
 
+.socialicon{
+  height:50px;
+  padding:10px;
+  margin:10px;
+}
+
+.socialicon:hover{
+  height:50px;
+  padding:10px;
+  margin:10px;
+  /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#404788+0,1f968b+100 */
+background: #404788; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #404788 0%, #1f968b 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #404788 0%,#1f968b 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #404788 0%,#1f968b 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#404788', endColorstr='#1f968b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+}
+
 body{
     background-color: rgb(20, 20, 20);
-    color: aliceblue;
+    color: #f0f8ff;
 }
 
 a, a:hover, a:active, a:visited { color: aliceblue; }
