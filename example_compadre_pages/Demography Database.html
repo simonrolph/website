@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://lifecycle.ex.ac.uk/species=all/publications=2 -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+    <title>Demography Database</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap -->
+    <link href="./Demography Database_files/bootstrap.min.css" rel="stylesheet" media="screen">
+<link rel="shortcut icon" href="http://lifecycle.ex.ac.uk/static/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://lifecycle.ex.ac.uk/static/favicon.ico" type="image/x-icon">
+<link rel="stylesheet" type="text/css" href="./Demography Database_files/styles.css">
+<link rel="stylesheet" type="text/css" href="./Demography Database_files/leaflet.css">
+<script id="twitter-wjs" src="./Demography Database_files/widgets.js.download"></script><script src="./Demography Database_files/jquery.min.js.download"></script>
+<script>
+$(document).ready(function() {
+    $("body").tooltip({ selector: '[data-toggle=tooltip]' });
+});
+    </script>
+
+
+
+  </head>
+  <body style="" cz-shortcut-listen="true" class="">
+    
+
+<div class="top-banner">
+    <div class="container">
+        <br>
+        <div class="row">
+            <div class="col-xs-3"><img src="./Demography Database_files/compadre-logo.png" class="img-responsive"></div>
+            <div class="col-xs-6"></div>
+            <div class="col-xs-3"><img src="./Demography Database_files/comadre-logo.png" class="img-responsive"></div>
+        </div>
+    </div>
+    </div>
+
+<nav class="navbar navbar-inverse affix-top" data-spy="affix" data-offset-top="100" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        </div>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav top-bar">
+                <li><a href="http://lifecycle.ex.ac.uk/">Home</a></li> 
+                <li class="dropdown">
+                    <a href="http://lifecycle.ex.ac.uk/species=all/publications=2#" class="dropdown-toggle" data-toggle="dropdown">About<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://lifecycle.ex.ac.uk/about/news">News</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/wordpress">Wordpress</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/socialmedia">Social Media</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/team">Team</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/FAQs">FAQs</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/history">History</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/about/funding">Funding bodies</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="http://lifecycle.ex.ac.uk/species=all/publications=2#" class="dropdown-toggle" data-toggle="dropdown">Explore Database<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://lifecycle.ex.ac.uk/explorer/life/asweknowit">Taxonomic Explorer</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/species-table/">Search by Species</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/publications-table/">Search by Publication</a></li>
+                    </ul>
+                </li>
+                  <li class="dropdown">
+                    <a href="http://lifecycle.ex.ac.uk/species=all/publications=2#" class="dropdown-toggle" data-toggle="dropdown">Data Download<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li> <a href="http://lifecycle.ex.ac.uk/protocol">Data Digitisation Protocol</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/download">Download complete database</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/outputs/termsofuse">Terms of use</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="http://lifecycle.ex.ac.uk/species=all/publications=2#" class="dropdown-toggle" data-toggle="dropdown">Contribute<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://lifecycle.ex.ac.uk/contribute-data">Contribute your data</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/become-a-compadrino">Become a Compadrino</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/help-develop-site">Help develop this site</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="http://lifecycle.ex.ac.uk/species=all/publications=2#" class="dropdown-toggle" data-toggle="dropdown">Education<b class="caret"></b> </a>
+                    <ul class="dropdown-menu">
+                        <li><a href="http://lifecycle.ex.ac.uk/resources/education"><b>Education Home</b></a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/resources/lifecycles">Lifecycles</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/resources/education_ppm">What is a Matrix Model?</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/resources/r_resources">Handy R Packages</a></li>
+                        <li><a href="http://lifecycle.ex.ac.uk/resources/publications">Demography Publications</a>
+                    </li></ul>
+                </li>
+                
+                
+            </ul>
+            <ul class="nav navbar-nav navbar-right"> 
+<!--                <li><a href="/auth/login_with_google">Log In (Google)</a></li>
+-->
+                <li><a href="http://lifecycle.ex.ac.uk/auth/login">Log In </a></li> 
+            </ul>
+
+                
+            </div>
+        </div>
+</nav>
+<!--
+    <div class="facebook">
+                    <a target="_blank" title="find us on Facebook" href="http://www.facebook.com/groups/compadrecomadre"><img alt="follow me on facebook" src="//login.create.net/images/icons/user/facebook_30x30.png" border=0></a>
+                </div>
+                <div class="twitter">
+                    <a href="https://twitter.com/intent/tweet?text=A%20Database%20of%20Demography&button_hashtag=compadreDB&hashtags=compadreDB,comadreDB" class="twitter-share-button" data-show-count="false" data-size="large"><script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>Tweet</a>
+                </div>
+-->
+
+
+    
+<div class="container">   
+    
+<p>Rollover the question marks (like this one: <span data-toggle="tooltip" data-placement="top" title="Hello world!" class="nounderline glyphicon glyphicon-question-sign"></span>) for information about the data presented here.</p>
+
+
+
+    <button type="button" class="btn btn-xs btn-default" data-toggle="collapse" href="#mappo"> <span class="glyphicon glyphicon-globe"></span> Show/hide map </button>
+    <div id="mappo" class="panel-collapse in collapse">
+        <div class="row">
+            <div class="col-md-9">
+                <div id="dist_map" class="shadowed leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0" style="position: relative;"><div class="leaflet-pane leaflet-map-pane" style="transform: translate3d(38px, -101px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 6; transform: translate3d(-964px, -131px, 0px) scale(4);"></div><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 8; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./Demography Database_files/6" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/6(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/5" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/7" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/6(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/5(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/7(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/5(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/7(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/4" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/0" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/4(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/0(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/4(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/0(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 385px, 0px); opacity: 1;"></div></div><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 8; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./Demography Database_files/tile" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(1)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(2)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(3)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(4)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(5)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(6)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(7)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(8)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(9)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(10)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(11)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(12)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(13)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(14)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 385px, 0px); opacity: 1;"></div></div><div class="leaflet-layer " style="z-index: 2; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 8; transform: translate3d(0px, 0px, 0px) scale(1);"><img alt="" src="./Demography Database_files/tile(15)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(16)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(17)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(18)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(19)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(232px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(20)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(21)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(22)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-24px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(23)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(488px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(24)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(25)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 129px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(26)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(27)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, -127px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(28)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-280px, 385px, 0px); opacity: 1;"><img alt="" src="./Demography Database_files/tile(29)" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(744px, 385px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><div class="vector-marker-shadow vector-marker leaflet-zoom-animated" style="margin-left: -39px; margin-top: -45px; width: 0px; height: 0px; transform: translate3d(494px, 179px, 0px);"></div><div class="vector-marker-shadow vector-marker leaflet-zoom-animated" style="margin-left: -39px; margin-top: -45px; width: 0px; height: 0px; transform: translate3d(368px, 362px, 0px);"></div></div><div class="leaflet-pane leaflet-overlay-pane"></div><div class="leaflet-pane leaflet-marker-pane"><div class="vector-marker-icon-#BCF473 vector-marker leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -16px; margin-top: -32px; width: 32px; height: 32px; transform: translate3d(494px, 179px, 0px); z-index: 179;"><svg width="32px" height="32px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16,1 C7.7146,1 1,7.65636364 1,15.8648485 C1,24.0760606 16,51 16,51 C16,51 31,24.0760606 31,15.8648485 C31,7.65636364 24.2815,1 16,1 L16,1 Z" fill="#BCF473"></path></svg><i class="fa fa-home icon-white" style="width: 32px;"></i></div><div class="vector-marker-icon-#BCF473 vector-marker leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -16px; margin-top: -32px; width: 32px; height: 32px; transform: translate3d(368px, 362px, 0px); z-index: 362;"><svg width="32px" height="32px" viewBox="0 0 32 52" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><path d="M16,1 C7.7146,1 1,7.65636364 1,15.8648485 C1,24.0760606 16,51 16,51 C16,51 31,24.0760606 31,15.8648485 C31,7.65636364 24.2815,1 16,1 L16,1 Z" fill="#BCF473"></path></svg><i class="fa fa-home icon-white" style="width: 32px;"></i></div></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(1663.5px, 940px, 0px) scale(4);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://lifecycle.ex.ac.uk/species=all/publications=2#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://lifecycle.ex.ac.uk/species=all/publications=2#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"><div class="leaflet-control-layers leaflet-control-layers-expanded leaflet-control" aria-haspopup="true"><form class="leaflet-control-layers-list"><div class="leaflet-control-layers-base"><label><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers" checked="checked"><span> GBIF data - Abies homolepis</span></div></label><label><div><input type="radio" class="leaflet-control-layers-selector" name="leaflet-base-layers" checked="checked"><span> GBIF data - Fagus crenata</span></div></label></div><div class="leaflet-control-layers-separator" style="display: none;"></div><div class="leaflet-control-layers-overlays"></div></form></div></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a> | Tiles © Esri — Source: US National Park Service</div></div></div></div>
+                </div>
+            <div class="col-md-3">
+                <h3>Map legend</h3>
+                <p><b>Populations</b></p>
+                <div class="row">
+                    <div class="col-xs-2">
+                        <img src="./Demography Database_files/marker.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-10">
+                        <p>Each marker represents a population that was studied. Different colours (
+<span class="glyphicon glyphicon-map-marker" style="color:#BCF473;"></span> 
+                    ) represents data from different sources.</p>
+                    </div>
+                
+                </div>
+
+                    
+                
+                <p><b>Occurence data</b></p>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img src="./Demography Database_files/map.png" class="img-responsive">
+                    </div>
+                    <div class="col-xs-8">
+                        <p>GBIF species occurence data</p>
+                    </div>
+                    
+                </div>
+                <br>
+                <p>Use the selector on the right-hand side of the map to choose between species</p>
+                <p>This data is from the Global Biodiversity Information Facility (GBIF), learn more about this <a href="http://www.gbif.org/">here.</a></p>
+            </div>
+        </div>
+    </div>
+
+
+<div id="notmap">
+    
+    
+    
+    <div>
+        
+        <!-- compadrino actions for top part of page -->
+    
+    <h1><i>Abies homolepis</i>  </h1>
+        
+
+    
+        <div class="row">
+    
+        
+        
+        <div class="col-sm-8">
+            <p><b>IUCN status <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span>: </b>Near Threatened</p>
+        </div>
+        
+    </div>
+        
+    
+    <!-- BREADCRUMB -->
+    
+
+            <p><b>Taxonomy: </b><a href="http://lifecycle.ex.ac.uk/explorer/life/asweknowit">Life</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/kingdom/Plantae">Plantae</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/phylum/Pinophyta">Pinophyta</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/class/Pinopsida">Pinopsida</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/order/Pinales">Pinales</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/family/Pinaceae">Pinaceae</a> &nbsp;&nbsp;&nbsp;&nbsp;  Authority <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span>  : None &nbsp;&nbsp;&nbsp;&nbsp; TPL version <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span>: None </p>  
+            
+         
+
+<!-- Top page section (species, taxonomy, traits models)-->
+<div class="row">
+    
+    <div class="col-sm-8"> <!-- Left side infobox with pictures and map -->
+            <div class="row">
+                <div class="col-xs-6"> 
+                    <div class="species-image-container shadowed" style="background-image:url('Demography Database_files/abies1.jpg');"></div>  </div>
+                <div class="col-xs-6"> 
+                    <div class="species-image-container shadowed" style="background-image:url('Demography Database_files/abies2.jpg');"></div>  </div>
+            </div>
+    </div>
+    
+    <!-- Right side information with taxonom and traits -->
+    <div class="col-sm-4">   
+        <h3>Traits </h3>
+        <table style="width:100%" class="table">
+            <tbody><tr>
+                <td> <strong>Growth Type <span data-toggle="tooltip" data-placement="top" title="Basic growth type description used to order species within the database" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td> Tree </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Reproductive Repetition <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> <strong>Dicot/Monocot <span data-toggle="tooltip" data-placement="top" title="Within the plantae kingdom, is the study species a Eudicot or Monocot" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td>  </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Angio/Gymnosperm <span data-toggle="tooltip" data-placement="top" title="Within the plantae kingdom, is the study species an angiosperm or gymnosperm" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td> Gymnosperm </td>
+            </tr>
+            <tr>
+                <td> <strong>Growth Form Raunkiaer <span data-toggle="tooltip" data-placement="top" title="Plant classification according to Raunkiaer" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td> Megaphanerophyte </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Invasive (GISD Status) <span data-toggle="tooltip" data-placement="top" title="Is the species globally known as invasive according to iucngisd.org (TRUE or FALSE)" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td> False </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+        </tbody></table>  
+    </div>
+<!-- End of top section (species, taxonomy, traits models)) -->
+</div>
+        <br>
+<!-- External sources line with buttons  (species model)--> 
+<div id="external-sources"> Search external sources:
+    <a href="https://scholar.google.co.uk/scholar?q=Abies%20homolepis" target="_blank" class="btn btn-default" role="button"><img src="./Demography Database_files/favicon-png.ico" class="little_logo"> Scholar</a>
+    
+    <a href="http://www.iucnredlist.org/details/42288/0" target="_blank" class="btn btn-default" role="button"><img src="./Demography Database_files/favicon.ico" class="little_logo"> IUCN Red List</a>
+    
+    <a href="http://www.onezoom.org/life.html/@Abies_homolepis" target="_blank" class="btn btn-default" role="button"> OneZoom</a>
+    <a href="http://eol.org/search?q=Abies%20homolepis&amp;search=Go" target="_blank" class="btn btn-default" role="button"> Enyclopedia of Life</a>
+    <a href="http://www.catalogueoflife.org/col/search/all/key/Abies%20homolepis/" target="_blank" class="btn btn-default" role="button"> Catalogue of Life</a>
+    <a href="https://en.wikipedia.org/wiki/Abies%20homolepis" target="_blank" class="btn btn-default" role="button"><img src="./Demography Database_files/wikipedia.ico" class="little_logo"> Wikipedia</a>
+    <a href="http://www.ncbi.nlm.nih.gov/nuccore/?term=%22Abies%20homolepis%22" target="_blank" class="btn btn-default" role="button"><img class="little_logo" src="./Demography Database_files/favicon(4).ico"> Genbank</a>
+</div>
+<!-- end of external sources  (species model)-->
+<br>
+</div>
+    
+
+
+
+    
+    <!-- populations + matrices section -->
+    
+     
+        
+        <!-- looping through populations -->
+        
+         
+        
+        <a class="anchor" name="population=7"></a>
+        <div class="population_box #BCF473" style="border-left-color:#BCF473;">
+            <div class="population" data-value="id2"></div> 
+            
+            <!-- compadrino actions box -->
+            
+            
+            <!-- population information -->
+            <h4><strong>Population Name: </strong>Biligiri Rangaswamy Temple Wildlife Sanctuary  <span class="label label-default">1 matrices</span> <span class="label label-default">1982 - 1986</span> <span class="label label-default"> <img src="./Demography Database_files/JPN.GIF"> JPN, Asia </span> </h4>
+            <table style="width:100%" ,="" class="table">
+                <tbody><tr>
+                    <td><strong>Ecoregion</strong> <span data-toggle="tooltip" data-placement="top" title="Description of the Ecoregion for the study" class="nounderline glyphicon glyphicon-question-sign"></span> :  Temperate coniferous forests   </td>
+                    <td>
+                    <strong>Location: </strong><span class="coordinates Abies homolepis 1 7">34.0, 136.0</span>  </td>
+                    <td>
+                    
+                  </td>
+                    <td><b>Within site replication </b> <span data-toggle="tooltip" data-placement="top" title="Reports the number of plots or transects sampled at each population and should give an accurate size description of the plots." class="nounderline glyphicon glyphicon-question-sign"></span> : 5 m x 5 m quadrats 
+                        
+                </td></tr>
+            </tbody></table>
+            <button type="button" class="btn btn-xs btn-default collapsed" data-toggle="collapse" href="#population_7"> <span class="glyphicon glyphicon-th-list"></span> Show/hide matrices </button>
+            <div id="population_7" class="panel-collapse collapse" style="height: 0px;">
+                <p style="text-align: center;"><span class="glyphicon glyphicon-hand-down"></span> Click on the sections below to view individual matrix models </p> 
+                
+                <!-- looping through matrices -->
+                
+                
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" data-toggle="collapse" href="#matrix_182">
+                            <h4 id="18" class="panel-title">
+                            <p>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="Indicates the type of matrix population model (Mean - a mean matrix was calculated by averaging across more than one population studied over a single time period, for example, over one year)">
+                                    <span class="nounderline label label-default">Mean matrix</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="the number of stage or age or ontogeny classes within the MPM">
+                                    <span class="label label-default">6x6</span> 
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="Frequency with which seasonal or annual the matrix population model was constructed">
+                                    <span class="label label-default">Periodicity: 0.2</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="The start and end of study to produce this matrix." class="nounderline">
+                                    <span class="label label-default">  7/1982 to  1986</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Describes if a treatment was applied or not (unmanipulated), and the nature of the treatment." class="nounderline">
+                                    <span class="label label-default">Treatment: Unmanipulated</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Indicates whether the study species was studied in the wild (W) or under controlled conditions (C) (W - Wild: study in natural conditions)" class="nounderline">
+                                    <span class="label label-default">Captivity: W</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Sex considered when constructing the matrix population model. For example, M - Males. (A - All sexes together)" class="nounderline">
+                                    <span class="label label-default">Studied sex: A</span>
+                                </a>
+                                
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="A boolean field that indicates whether the matrix presented was calculated per season (true) or not (false)" class="nounderline">
+                                <span class="label label-default">Seasonal: False</span>
+                                    </a>
+                                
+                                <!--
+                                
+                                
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix irreducible' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix ergodic' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix primitive' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+-->
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Asymptpic population growth rate" class="nounderline">
+                                <span class="label label-default">λ = 0.98</span>
+                                    </a>
+                                
+                                
+                                
+                            </p>
+                            </h4> 
+                        </div>
+                        
+                        <div id="matrix_182" class="panel-collapse in" style="height: auto;">
+                            <li class="list-group-item">
+                                <ul class="nav nav-pills matrices">
+                                    <li class="active"><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#home_18">Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_18_1">Survival Matrix </a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_18_2">Fecundity Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_18_3">Clonal Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_18_4">Additional Infomation</a></li>  </ul>
+                                <div class="tab-content">
+                                    <div id="home_18" class="tab-pane in active">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: &gt;41 cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="non_empty_box" style="background-color: rgb(190, 200, 220);">0.570</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="non_empty_box" style="background-color: rgb(216, 226, 246);">0.200</td><td class="non_empty_box" style="background-color: rgb(173, 183, 203);">0.810</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.050</td><td class="non_empty_box" style="background-color: rgb(165, 175, 195);">0.930</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(161, 171, 191);">0.980</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(176, 186, 206);">0.770</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(217, 227, 247);">0.190</td><td class="non_empty_box" style="background-color: rgb(169, 179, 199);">0.870</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_18_1" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: &gt;41 cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="non_empty_box" style="background-color: rgb(190, 200, 220);">0.570</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="non_empty_box" style="background-color: rgb(216, 226, 246);">0.200</td><td class="non_empty_box" style="background-color: rgb(173, 183, 203);">0.810</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.050</td><td class="non_empty_box" style="background-color: rgb(165, 175, 195);">0.930</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(161, 171, 191);">0.980</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(176, 186, 206);">0.770</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(217, 227, 247);">0.190</td><td class="non_empty_box" style="background-color: rgb(169, 179, 199);">0.870</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_18_2" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: &gt;41 cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_18_3" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: &gt;41 cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_18_4" class="tab-pane">
+                                        <p>Matrix start season: </p>
+                                        <p>Matrix end season:  NA</p>
+                                        <p>matrix_criteria_size</p>
+                                        <p>matrix_criteria_ontogeny</p>
+                                        <p>matrix_criteria_age</p>    
+                                        <p>matrix_complete</p>
+                                        <p>independence_origin</p>
+                                        <p>matrix_complete</p>
+                                        <p>n_individuals</p>
+                                        <p>vectors_includes_na</p>
+                                        <p>independent</p>
+                                        <p>non_independence</p>
+                                        <p>non_independence_author</p>
+                                        <p>matrix_difficulty</p>
+                                        <p><strong>matrix_fec: </strong> False</p>
+                                    </div>
+                                    <p><strong>Observations: </strong> Fecundity is missing Periodicity Extra: 0.2 </p>
+                                    
+                                    <!-- Fixed model suff goes here -->
+                                     
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>    </div>
+        </div>    
+    
+    
+    
+    
+    
+    
+    <div>
+        
+        <!-- compadrino actions for top part of page -->
+    
+    <h1><i>Fagus crenata</i>  </h1>
+        
+
+    
+        <div class="row">
+    
+        
+        
+    </div>
+        
+    
+    <!-- BREADCRUMB -->
+    
+
+            <p><b>Taxonomy: </b><a href="http://lifecycle.ex.ac.uk/explorer/life/asweknowit">Life</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/kingdom/Plantae">Plantae</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/phylum/Magnoliophyta">Magnoliophyta</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/class/Magnoliopsida">Magnoliopsida</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/order/Fagales">Fagales</a> &gt; <a href="http://lifecycle.ex.ac.uk/explorer/family/Fagaceae">Fagaceae</a> &nbsp;&nbsp;&nbsp;&nbsp;  Authority <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span>  : None &nbsp;&nbsp;&nbsp;&nbsp; TPL version <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span>: None </p>  
+            
+         
+
+<!-- Top page section (species, taxonomy, traits models)-->
+<div class="row">
+    
+    <div class="col-sm-8"> <!-- Left side infobox with pictures and map -->
+            <div class="row">
+                <div class="col-xs-6"> 
+                    <div class="species-image-container shadowed" style="background-image:url('Demography Database_files/fagus1.jpg');"></div>  </div>
+                <div class="col-xs-6"> 
+                    <div class="species-image-container shadowed" style="background-image:url('Demography Database_files/fagus2.jpg');"></div>  </div>
+            </div>
+    </div>
+    
+    <!-- Right side information with taxonom and traits -->
+    <div class="col-sm-4">   
+        <h3>Traits </h3>
+        <table style="width:100%" class="table">
+            <tbody><tr>
+                <td> <strong>Growth Type <span data-toggle="tooltip" data-placement="top" title="Basic growth type description used to order species within the database" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td> Tree </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Reproductive Repetition <span data-toggle="tooltip" data-placement="top" title="" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td>  </td>
+            </tr>
+            <tr>
+                <td> <strong>Dicot/Monocot <span data-toggle="tooltip" data-placement="top" title="Within the plantae kingdom, is the study species a Eudicot or Monocot" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td> Eudicot </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Angio/Gymnosperm <span data-toggle="tooltip" data-placement="top" title="Within the plantae kingdom, is the study species an angiosperm or gymnosperm" class="nounderline glyphicon glyphicon-question-sign"></span> : </strong> </td>
+                <td> Angiosperm </td>
+            </tr>
+            <tr>
+                <td> <strong>Growth Form Raunkiaer <span data-toggle="tooltip" data-placement="top" title="Plant classification according to Raunkiaer" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td> Megaphanerophyte </td>
+            </tr>
+            
+            
+            <tr>
+                <td> <strong>Invasive (GISD Status) <span data-toggle="tooltip" data-placement="top" title="Is the species globally known as invasive according to iucngisd.org (TRUE or FALSE)" class="nounderline glyphicon glyphicon-question-sign"></span> :</strong> </td>
+                <td> False </td>
+            </tr>
+            
+            
+            
+            
+            
+            
+            
+        </tbody></table>  
+    </div>
+<!-- End of top section (species, taxonomy, traits models)) -->
+</div>
+        <br>
+<!-- External sources line with buttons  (species model)--> 
+<div id="external-sources"> Search external sources:
+    <a href="https://scholar.google.co.uk/scholar?q=Fagus%20crenata" target="_blank" class="btn btn-default" role="button"><img src="./Demography Database_files/favicon-png.ico" class="little_logo"> Scholar</a>
+    
+    <a href="http://www.onezoom.org/life.html/@Fagus_crenata" target="_blank" class="btn btn-default" role="button"> OneZoom</a>
+    <a href="http://eol.org/search?q=Fagus%20crenata&amp;search=Go" target="_blank" class="btn btn-default" role="button"> Enyclopedia of Life</a>
+    <a href="http://www.catalogueoflife.org/col/search/all/key/Fagus%20crenata/" target="_blank" class="btn btn-default" role="button"> Catalogue of Life</a>
+    <a href="https://en.wikipedia.org/wiki/Fagus%20crenata" target="_blank" class="btn btn-default" role="button"><img src="./Demography Database_files/wikipedia.ico" class="little_logo"> Wikipedia</a>
+    <a href="http://www.ncbi.nlm.nih.gov/nuccore/?term=%22Fagus%20crenata%22" target="_blank" class="btn btn-default" role="button"><img class="little_logo" src="./Demography Database_files/favicon(4).ico"> Genbank</a>
+</div>
+<!-- end of external sources  (species model)-->
+<br>
+</div>
+    
+
+
+
+    
+    <!-- populations + matrices section -->
+    
+     
+        
+        <!-- looping through populations -->
+        
+        
+        <a class="anchor" name="population=891"></a>
+        <div class="population_box #BCF473" style="border-left-color:#BCF473;">
+            <div class="population" data-value="id2"></div> 
+            
+            <!-- compadrino actions box -->
+            
+            
+            <!-- population information -->
+            <h4><strong>Population Name: </strong>Lambir Hills National Park  <span class="label label-default">1 matrices</span> <span class="label label-default">1981 - 1986</span> <span class="label label-default"> <img src="./Demography Database_files/JPN.GIF"> JPN, Asia </span> </h4>
+            <table style="width:100%" ,="" class="table">
+                <tbody><tr>
+                    <td><strong>Ecoregion</strong> <span data-toggle="tooltip" data-placement="top" title="Description of the Ecoregion for the study" class="nounderline glyphicon glyphicon-question-sign"></span> :  Temperate broadleaf and mixed forests   </td>
+                    <td>
+                    <strong>Location: </strong><span class="coordinates Fagus crenata 1 891">4.03333, 113.833</span>  </td>
+                    <td><strong>Altitude: </strong><span>150.0m</span>
+                    
+                  </td>
+                    <td>
+                        
+                </td></tr>
+            </tbody></table>
+            <button type="button" class="btn btn-xs btn-default collapsed" data-toggle="collapse" href="#population_891"> <span class="glyphicon glyphicon-th-list"></span> Show/hide matrices </button>
+            <div id="population_891" class="panel-collapse collapse" style="height: 0px;">
+                <p style="text-align: center;"><span class="glyphicon glyphicon-hand-down"></span> Click on the sections below to view individual matrix models </p> 
+                
+                <!-- looping through matrices -->
+                
+                
+                <div class="panel-group">
+                    <div class="panel panel-default">
+                        <div class="panel-heading collapsed" data-toggle="collapse" href="#matrix_28342">
+                            <h4 id="2834" class="panel-title">
+                            <p>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Indicates the type of matrix population model (Mean - a mean matrix was calculated by averaging across more than one population studied over a single time period, for example, over one year)" class="nounderline">
+                                    <span class="nounderline label label-default">Mean matrix</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="the number of stage or age or ontogeny classes within the MPM" class="nounderline">
+                                    <span class="label label-default">8x8</span> 
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="Frequency with which seasonal or annual the matrix population model was constructed">
+                                    <span class="label label-default">Periodicity: 1.0</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="The start and end of study to produce this matrix." class="nounderline">
+                                    <span class="label label-default"> 1981 to  1986</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Describes if a treatment was applied or not (unmanipulated), and the nature of the treatment." class="nounderline">
+                                    <span class="label label-default">Treatment: Unmanipulated</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="Indicates whether the study species was studied in the wild (W) or under controlled conditions (C) (W - Wild: study in natural conditions)" class="nounderline">
+                                    <span class="label label-default">Captivity: W</span>
+                                </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="Sex considered when constructing the matrix population model. For example, M - Males. (A - All sexes together)">
+                                    <span class="label label-default">Studied sex: A</span>
+                                </a>
+                                
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="A boolean field that indicates whether the matrix presented was calculated per season (true) or not (false)">
+                                <span class="label label-default">Seasonal: False</span>
+                                    </a>
+                                
+                                <!--
+                                
+                                
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix irreducible' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix ergodic' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+                                
+                                <a data-toggle="tooltip" data-placement="top" title='Is matrix primitive' class="nounderline">
+                                <span class="label label-default">False</span>
+                                    </a>
+-->
+                                
+                                <a data-toggle="tooltip" data-placement="top" title="" class="nounderline" data-original-title="Asymptpic population growth rate">
+                                <span class="label label-default">λ = 0.96</span>
+                                    </a>
+                                
+                                
+                                
+                            </p>
+                            </h4> 
+                        </div>
+                        
+                        <div id="matrix_28342" class="panel-collapse collapse" style="height: 0px;">
+                            <li class="list-group-item">
+                                <ul class="nav nav-pills matrices">
+                                    <li class="active"><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#home_2834">Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_2834_1">Survival Matrix </a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_2834_2">Fecundity Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_2834_3">Clonal Matrix</a></li>
+                                    <li><a data-toggle="pill" href="http://lifecycle.ex.ac.uk/species=all/publications=2#menu_2834_4">Additional Infomation</a></li>  </ul>
+                                <div class="tab-content">
+                                    <div id="home_2834" class="tab-pane in active">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: 41-50 cm</td><td>DBH: 51-60 cm</td><td>DBH: 61+ cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="non_empty_box" style="background-color: rgb(173, 183, 203);">0.810</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(172, 182, 202);">0.830</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(228, 238, 255);">0.030</td><td class="non_empty_box" style="background-color: rgb(166, 176, 196);">0.920</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.050</td><td class="non_empty_box" style="background-color: rgb(166, 176, 196);">0.910</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.060</td><td class="non_empty_box" style="background-color: rgb(172, 182, 202);">0.830</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(225, 235, 255);">0.070</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_2834_1" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: 41-50 cm</td><td>DBH: 51-60 cm</td><td>DBH: 61+ cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="non_empty_box" style="background-color: rgb(173, 183, 203);">0.810</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(172, 182, 202);">0.830</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(228, 238, 255);">0.030</td><td class="non_empty_box" style="background-color: rgb(166, 176, 196);">0.920</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.050</td><td class="non_empty_box" style="background-color: rgb(166, 176, 196);">0.910</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(226, 236, 255);">0.060</td><td class="non_empty_box" style="background-color: rgb(172, 182, 202);">0.830</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(225, 235, 255);">0.070</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="non_empty_box" style="background-color: rgb(229, 239, 255);">0.020</td><td class="non_empty_box" style="background-color: rgb(163, 173, 193);">0.960</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_2834_2" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: 41-50 cm</td><td>DBH: 51-60 cm</td><td>DBH: 61+ cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_2834_3" class="tab-pane">
+                                        <div class="table-responsive matClasses"><table class="table table-bordered"><tbody><tr><td>DBH: 0-5 cm</td><td>DBH: 6-10 cm</td><td>DBH: 11-20 cm</td><td>DBH: 21-30 cm</td><td>DBH: 31-40 cm</td><td>DBH: 41-50 cm</td><td>DBH: 51-60 cm</td><td>DBH: 61+ cm</td></tr></tbody></table></div>
+                                        <div class="table-responsive matA"><table class="table table-bordered"><tbody><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr><tr><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td><td class="empty_box">0</td></tr></tbody></table></div>
+                                    </div>
+                                    <div id="menu_2834_4" class="tab-pane">
+                                        <p>Matrix start season:  NA</p>
+                                        <p>Matrix end season:  NA</p>
+                                        <p>matrix_criteria_size</p>
+                                        <p>matrix_criteria_ontogeny</p>
+                                        <p>matrix_criteria_age</p>    
+                                        <p>matrix_complete</p>
+                                        <p>independence_origin</p>
+                                        <p>matrix_complete</p>
+                                        <p>n_individuals</p>
+                                        <p>vectors_includes_na</p>
+                                        <p>independent</p>
+                                        <p>non_independence</p>
+                                        <p>non_independence_author</p>
+                                        <p>matrix_difficulty</p>
+                                        <p><strong>matrix_fec: </strong> False</p>
+                                    </div>
+                                    <p><strong>Observations: </strong> Periodicity Extra: 1 </p>
+                                    
+                                    <!-- Fixed model suff goes here -->
+                                     
+                                </div>
+                            </li>
+                        </div>
+                    </div>
+                </div>    </div>
+        </div>  
+           
+    
+    
+    
+    
+    
+    
+    
+    <div class="info_box">
+        <table style="width:100%" class="table">
+            <thead>
+                <tr>
+                    <td>
+                        <h4><strong>Publications:</strong></h4></td>
+                    <td></td>
+                </tr>
+            </thead> 
+            <tbody> 
+                
+                
+                <tr class="publication_row" style="border-left-color:#BCF473;">
+                    <td> <a href="http://lifecycle.ex.ac.uk/species=all/publications=2">Nakashizuka (1991). "Variation in juvenile survival and related physiological traits among dipterocarp species co‐existing in a Bornean forest" in <i>J Veg Sci</i></a> 
+                        
+                        <p><b>Purposes</b> <span data-toggle="tooltip" data-placement="top" title="A true or false description of the purposes of the original study" class="nounderline glyphicon glyphicon-question-sign"></span>:
+  Comparative Demography; 
+                        </p>
+                        
+                        
+                        
+                    </td>
+                    <td> <a class="btn btn-default" target="_blank" href="https://doi.org/10.1658/1100-9233(2007)18[379:VIJSAR]2.0.CO;2">Go to source <span class="glyphicon glyphicon-new-window"></span></a></td>
+                </tr> 
+                
+                
+                
+                 </tbody>
+             </table>
+        
+    </div> 
+    
+    </div>
+  
+    <hr>
+    <div>
+        <div style="text-align:center;margin-top:40px;">
+            <a target="_blank" href="http://www.demogr.mpg.de/"><img src="./Demography Database_files/mpidr-logo.png"></a>
+            <a target="_blank" href="http://www.sdu.dk/en/maxo"><img src="./Demography Database_files/1_logo_maxo.jpg"></a>
+            <a target="_blank" href="http://www.demogr.mpg.de/"><img src="./Demography Database_files/nerc.jpg" width="100" height="72" alt="hi"></a>
+            <a target="_blank" href="https://www.idiv.de/"><img src="./Demography Database_files/2_logo_idiv.jpg"></a>
+            <a target="_blank" href="http://www.exeter.ac.uk/"><img src="./Demography Database_files/3_logo_uexeter.jpg"></a>
+            <a target="_blank" href="https://www.sheffield.ac.uk/"><img src="./Demography Database_files/4_logo_usheffield.jpg"></a>
+            <a target="_blank" href="http://www.ox.ac.uk/"><img src="./Demography Database_files/5_logo_uoxford.jpg"></a>
+            <a target="_blank" href="http://www.uva.nl/"><img src="./Demography Database_files/6_logo_uamsterdam.jpg"></a>
+            <a target="_blank" href="http://www.lpzoo.org/"><img src="./Demography Database_files/7_logo_lincolnparkzoo.jpg"></a>
+            <a target="_blank" href="https://www.tcd.ie/"><img src="./Demography Database_files/8_logo_trinitycollege.jpg"></a>
+            <a target="_blank" href="https://www.southampton.ac.uk/"><img src="./Demography Database_files/9_logo_usouthampton.png"></a>
+            <a target="_blank" href="http://www.uzh.ch/"><img src="./Demography Database_files/10_logo_uzurich.png"></a>
+        </div>
+    </div>
+    <br>
+    <!--
+    <div style="text-align: center">
+        <a href="/about/news">News</a> |
+        <a href="/about/team">Team</a> |
+        <a href="/about/FAQs">FAQs</a> |
+        <a href="/about/history">History</a> |
+        <a href="/about/funding">Funding bodies</a> |
+        <a href="/resources/publications">Publications</a> |
+    </div>
+-->
+</div> 
+
+<footer>
+
+
+
+      
+
+    <script src="./Demography Database_files/jquery.min.js(1).download"></script>
+    <script src="./Demography Database_files/bootstrap.min.js.download"></script> 
+<script src="./Demography Database_files/moment-with-langs.min.js.download"></script>
+<script>
+function flask_moment_render(elem) {
+    $(elem).text(eval('moment("' + $(elem).data('timestamp') + '").' + $(elem).data('format') + ';'));
+    $(elem).removeClass('flask-moment');
+}
+function flask_moment_render_all() {
+    $('.flask-moment').each(function() {
+        flask_moment_render(this);
+        if ($(this).data('refresh')) {
+            (function(elem, interval) { setInterval(function() { flask_moment_render(elem) }, interval); })(this, $(this).data('refresh'));
+        }
+    })
+}
+$(document).ready(function() {
+    flask_moment_render_all();
+});
+</script>  
+ 
+<script type="text/javascript" src="./Demography Database_files/Markdown.Converter.min.js.download"></script>
+<script type="text/javascript" src="./Demography Database_files/Markdown.Sanitizer.min.js.download"></script>
+
+<!-- JAVASCRIPT -->
+<script>
+    function openInNewTab(url) {
+      var win = window.open(url, '_blank');
+      win.focus();
+    }
+</script>
+
+
+
+<script>
+    // Change matrix strings into tables
+    // var divs = document.getElementsByClassName("matA");
+    // for (var ii = 0; ii < divs.length; ii++) {
+    //     var matrix_string = divs[ii].innerHTML;
+    //     var matrix_string = matrix_string.replace(" [", "");
+    //     var matrix_string = matrix_string.replace("] ", "");
+    //     var matrix_string = matrix_string.replace(/;/g, " ");
+    //     var matrix_string_array = matrix_string.split(" ");
+    //     matSize = Math.sqrt(matrix_string_array.length);
+    //     var table_new = document.createElement('TABLE');
+    //     table_new.className = 'table table-bordered';
+    //     var tableBody = document.createElement('TBODY');
+    //     table_new.appendChild(tableBody);
+    //     var index = 0;
+    //     for (var i = 0; i < matSize; i++) {
+    //         var tr = document.createElement('TR');
+    //         tableBody.appendChild(tr);
+    //         for (var j = 0; j < matSize; j++) {
+    //             var td = document.createElement('TD');
+    //             var value = Number(matrix_string_array[index])
+    //             if (value != 0) {
+    //                 if (value.toFixed(3) != 0) {
+    //                     td.appendChild(document.createTextNode(value.toFixed(3)));
+    //                 }
+    //                 else {
+    //                     td.appendChild(document.createTextNode(value.toPrecision(2)))
+    //                 }
+    //                 td.className = 'non_empty_box'
+    //                 var colour_value = 230 - Math.round(value * 70);
+    //                 if (colour_value < 160) {
+    //                     var colour_value = 160;
+    //                 }
+    //                 td.style.backgroundColor = "rgb(" + Number(colour_value) + "," + Number(colour_value + 10) + "," + Number(colour_value + 30) + ")";
+    //             }
+    //             else {
+    //                 td.appendChild(document.createTextNode(value.toFixed(0)));
+    //                 td.className = 'empty_box'
+    //             }
+    //             tr.appendChild(td);
+    //             index = index + 1;
+    //         }
+    //     }
+    //     divs[ii].innerHTML = "";
+    //     divs[ii].appendChild(table_new);
+    // }
+</script>
+<script>
+    // Change class strings into tables
+    // var divs = document.getElementsByClassName("matClasses");
+    // for (var ii = 0; ii < divs.length; ii++) {
+    //     var matrix_string = divs[ii].innerHTML;
+    //     var matrix_string = matrix_string.substring(2, matrix_string.length - 2);
+    //     var matrix_string_array = matrix_string.split("|");
+    //     numberOfClasses = matrix_string_array.length;
+    //     var table_new = document.createElement('TABLE');
+    //     table_new.className = 'table table-bordered';
+    //     var tableBody = document.createElement('TBODY');
+    //     table_new.appendChild(tableBody);
+    //     var index = 0;
+    //     var tr = document.createElement('TR');
+    //     tableBody.appendChild(tr);
+    //     for (var j = 0; j < numberOfClasses; j++) {
+    //         var td = document.createElement('TD');
+    //         td.appendChild(document.createTextNode(matrix_string_array[index]));
+    //         tr.appendChild(td);
+    //         index = index + 1;
+    //     }
+    //     divs[ii].innerHTML = "";
+    //     divs[ii].appendChild(table_new);
+    // }
+</script>
+
+<script src="./Demography Database_files/leaflet.js.download"></script>
+<script src="./Demography Database_files/list.js.download"></script>
+<script src="./Demography Database_files/leaflet-vector-markers.min.js.download"></script>
+<script src="./Demography Database_files/oms.min.js.download"></script>
+
+<script>
+
+</script>
+
+<link rel="stylesheet" href="./Demography Database_files/leaflet-vector-markers.css">
+<script>
+     //draw empty map
+    var mymap = L.map('dist_map').setView([20, 20], 2);
+    var Esri_WorldPhysical = L.tileLayer('http://server.arcgisonline.com/ArcGIS/rest/services/World_Physical_Map/MapServer/tile/{z}/{y}/{x}', {
+        attribution: 'Tiles &copy; Esri &mdash; Source: US National Park Service'
+        , maxZoom: 8
+        , minZoom: 1
+    }).addTo(mymap);
+    
+    
+    
+    species2685663 = L.tileLayer('http://api.gbif.org/v1/map/density/tile?&x={x}&y={y}&z={z}&type=TAXON&key=2685663&resolution=4&layer=OBS_NO_YEAR&layer=SP_NO_YEAR&layer=OTH_NO_YEAR&layer=OBS_1900_1910&layer=SP_1900_1910&layer=OTH_1900_1910&layer=OBS_1910_1920&layer=SP_1910_1920&layer=OTH_1910_1920&layer=OBS_1920_1930&layer=SP_1920_1930&layer=OTH_1920_1930&layer=OBS_1930_1940&layer=SP_1930_1940&layer=OTH_1930_1940&layer=OBS_1940_1950&layer=SP_1940_1950&layer=OTH_1940_1950&layer=OBS_1950_1960&layer=SP_1950_1960&layer=OTH_1950_1960&layer=OBS_1960_1970&layer=SP_1960_1970&layer=OTH_1960_1970&layer=OBS_1970_1980&layer=SP_1970_1980&layer=OTH_1970_1980&layer=OBS_1980_1990&layer=SP_1980_1990&layer=OTH_1980_1990&layer=OBS_1990_2000&layer=SP_1990_2000&layer=OTH_1990_2000&layer=OBS_2000_2010&layer=SP_2000_2010&layer=OTH_2000_2010&layer=OBS_2010_2020&layer=SP_2010_2020&layer=OTH_2010_2020&layer=LIVING&layer=FOSSIL&palette=yellows-reds', {
+        attribution: ''
+        , maxZoom: 8
+        , minZoom: 2
+    , }).addTo(mymap); 
+      
+     
+    
+    species2882300 = L.tileLayer('http://api.gbif.org/v1/map/density/tile?&x={x}&y={y}&z={z}&type=TAXON&key=2882300&resolution=4&layer=OBS_NO_YEAR&layer=SP_NO_YEAR&layer=OTH_NO_YEAR&layer=OBS_1900_1910&layer=SP_1900_1910&layer=OTH_1900_1910&layer=OBS_1910_1920&layer=SP_1910_1920&layer=OTH_1910_1920&layer=OBS_1920_1930&layer=SP_1920_1930&layer=OTH_1920_1930&layer=OBS_1930_1940&layer=SP_1930_1940&layer=OTH_1930_1940&layer=OBS_1940_1950&layer=SP_1940_1950&layer=OTH_1940_1950&layer=OBS_1950_1960&layer=SP_1950_1960&layer=OTH_1950_1960&layer=OBS_1960_1970&layer=SP_1960_1970&layer=OTH_1960_1970&layer=OBS_1970_1980&layer=SP_1970_1980&layer=OTH_1970_1980&layer=OBS_1980_1990&layer=SP_1980_1990&layer=OTH_1980_1990&layer=OBS_1990_2000&layer=SP_1990_2000&layer=OTH_1990_2000&layer=OBS_2000_2010&layer=SP_2000_2010&layer=OTH_2000_2010&layer=OBS_2010_2020&layer=SP_2010_2020&layer=OTH_2010_2020&layer=LIVING&layer=FOSSIL&palette=yellows-reds', {
+        attribution: ''
+        , maxZoom: 8
+        , minZoom: 2
+    , }).addTo(mymap); 
+      
+     
+     
+     var baseMaps = { "Physical": Esri_WorldPhysical};
+      
+    var speciesMaps = { 
+    
+        
+        "GBIF data - Abies homolepis": species2685663,
+         
+    
+        
+        "GBIF data - Fagus crenata": species2882300,
+         
+    
+    };
+     
+    L.control.layers(speciesMaps,null,{collapsed:false}).addTo(mymap);
+</script>
+
+
+<script>
+    // create new spidery thing
+    var oms = new OverlappingMarkerSpiderfier(mymap, {
+        keepSpiderfied: true
+    });
+</script>
+<script>
+    
+    
+    // add map markers
+    $('.coordinates').each(function () {
+        var txt = $(this).text();
+        var coords = txt.split(", ");
+        var lat_dec = coords[0]
+        var lon_dec = coords[1]
+        var parentDiv = $(this).closest("div");
+        var parentDiv = $(parentDiv).attr('class');
+        var parentDiv = parentDiv.split(' ')[1];
+        var hexMarker = L.VectorMarkers.icon({
+            markerColor: parentDiv
+        });
+        
+        var species_name = $(this).attr("class").split(' ')[1];
+        var mat_num = $(this).attr("class").split(' ')[2];
+        if (mat_num == "1") { mat_num = mat_num + " matrix";} else { mat_num = mat_num + " matrices";}
+        var pop_id = $(this).attr("class").split(' ')[3];
+        
+        hexMarker.options.shadowSize = [0, 0];
+        hexMarker.options.iconSize = [32, 32];
+        hexMarker.options.iconAnchor = [16, 32];
+        var marker = L.marker([lat_dec, lon_dec], {
+            icon: hexMarker
+        });
+        
+        marker.bindPopup("<strong>" + species_name + "</strong> <br> "+mat_num+" <br> <a href='#population=" + pop_id + "' class='btn btn-default'>Go to population</a>").openPopup();
+        
+        mymap.addLayer(marker);
+        oms.addMarker(marker);
+    });
+</script>
+
+<script>
+    window.twttr = (function (d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0]
+            , t = window.twttr || {};
+        if (d.getElementById(id)) return t;
+        js = d.createElement(s);
+        js.id = id;
+        js.src = "https://platform.twitter.com/widgets.js";
+        fjs.parentNode.insertBefore(js, fjs);
+        t._e = [];
+        t.ready = function (f) {
+            t._e.push(f);
+        };
+        return t;
+    }(document, "script", "twitter-wjs"));
+</script>
+
+
+
+<script>
+    function htmlreplace(a, b, element) {
+        if (!element) element = document.body;
+        var nodes = element.childNodes;
+        for (var n = 0; n < nodes.length; n++) {
+            if (nodes[n].nodeType == Node.TEXT_NODE) {
+                var r = new RegExp(a, 'gi');
+                nodes[n].textContent = nodes[n].textContent.replace(r, b);
+            }
+            else {
+                htmlreplace(a, b, nodes[n]);
+            }
+        }
+    }
+    // htmlreplace('None', 'Unknown');
+    htmlreplace('<', '<');
+    htmlreplace('>', '>');
+    htmlreplace('-Checked', '-Checked');
+    htmlreplace('-Unchecked', '-Unchecked');
+    
+    var notmap = document.getElementById("notmap")
+    
+    notmap.innerHTML = notmap.innerHTML.replace(/-Green-/g, '-<span class="glyphicon glyphicon-ok" style="color:green"></span>-');
+    notmap.innerHTML = notmap.innerHTML.replace(/-Amber-/g, '-<span class="glyphicon glyphicon-warning-sign"  style="color:Coral"></span>-');
+    notmap.innerHTML = notmap.innerHTML.replace(/-Pending-/g, '-<span class="glyphicon glyphicon-flag" style="color:DarkOrchid"></span>-');
+    notmap.innerHTML = notmap.innerHTML.replace(/-Red-/g, '-<span class="glyphicon glyphicon glyphicon-remove" style="color:red"></span>-');
+</script>
+
+
+<script>
+    var all_links = document.getElementsByTagName("a");
+    for(var i=0; i<all_links.length; i++){
+    all_links[i].removeAttribute("href");
+}
+</script>
+
+
+  
+
+</footer><iframe scrolling="no" frameborder="0" allowtransparency="true" src="./Demography Database_files/widget_iframe.6787510241df65d128e2b60207ad4c25.html" title="Twitter settings iframe" style="display: none;"></iframe><div class="outer" style="display: none; position: absolute; z-index: 65000; background: rgba(255, 0, 0, 0.3);"></div></body></html>

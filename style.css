@@ -25,6 +25,13 @@ h3{
 
 }
 
+h4{
+  font-family: 'Overpass', sans-serif;
+  font-size: 25px;
+  margin-bottom: 0px;
+
+}
+
 .viridis {
   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#440154+0,404788+48,1f968b+69,73d055+83,b8de29+100 */
   background: #440154; /* Old browsers */
@@ -63,6 +70,11 @@ body{
 a, a:hover, a:active, a:visited { color: aliceblue; }
 
 p{
+  font-family: 'Overpass', sans-serif;
+  
+}
+
+li{
   font-family: 'Overpass', sans-serif;
   
 }
@@ -142,3 +154,13 @@ p{
     top: 0px;
     left: 0;
   }
+
+
+
+  code {
+    background-color: rgb(12, 96, 110);
+    border: 1px solid rgb(58, 58, 58);
+    display: block;
+    padding: 20px;
+    white-space: pre-wrap   
+  } 
